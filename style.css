@@ -33,7 +33,7 @@ button:active {
     margin-left: auto;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
-    width: 400px;  /* Ajusta el tamaño del contenedor */
+    width: 800px;  /* Ajusta el tamaño del contenedor */
     height: 400px; /* Ajusta el tamaño del contenedor */
     justify-content: center;
     background-color: #fff;  /* Fondo blanco para el contenedor */
