@@ -1,0 +1,58 @@
+body, html {
+ margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #84838c; /* Fondo oscuro para el encabezado */
+  color: white; /* Color del texto */
+  padding: 1rem ; /* Espaciado arriba y abajo */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+button { 
+  display: flex;
+  background-color: rgba(76, 76, 81, 0.514); 
+  color: white; 
+  padding: 10px; 
+  margin-top: 10px;
+  border: none; 
+  cursor: pointer; 
+  margin-right: auto;
+  margin-left: auto;
+} 
+
+button:active { 
+  background-color: rgb(42, 39, 39); 
+} 
+
+#container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    width: 400px;  /* Ajusta el tamaño del contenedor */
+    height: 400px; /* Ajusta el tamaño del contenedor */
+    justify-content: center;
+    background-color: #fff;  /* Fondo blanco para el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+    margin-bottom: 2rem;
+}
+
+.grid-item {
+    flex: 0 0 calc(100% / 16); /* Cada celda ocupa 1/16 del ancho del contenedor */
+    height: calc(100% / 16);   /* Cada celda ocupa 1/16 de la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa; /* Fondo gris claro para las celdas */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+    font-size: 14px; /* Tamaño de fuente ajustado para mayor claridad */
+    color: #fafafa; /* Color de texto oscuro */
+}
+
+.grid-item.active {
+    background-color: #b00000; /* Color de fondo cuando se activa la celda */
+}
